@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Fetch the code from the repository
-                git url: "https://github.com/btechconsults/web-pipeline.git"   
+                git branch: 'main', url: "https://github.com/btechconsults/web-pipeline.git"   
 				
 			}
 		}
